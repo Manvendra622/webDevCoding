@@ -1,0 +1,151 @@
+.heading{
+    position: relative;
+    top:-196px;
+    color:white;
+    text-align:center;
+    font-size:27px;
+    margin:auto;
+}
+.logo{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: red;
+    background-color: white;
+    border-radius: 70px;
+    width: 125px;
+    height: 124px;
+    margin-left:41%;
+    margin-right:35%;
+    font-size:22px;
+    padding-top:2%
+}
+.heading4{
+    margin-left: 75px;
+}
+.foodImage{
+    margin-left: 15px;
+
+}
+.boxText{
+    position: relative;
+    top: -113px;
+    margin-left: 139px;
+    width: 110px;
+}
+.dd{
+    position: relative;
+    top: -159px;
+    height: 33px;
+    width: 160px;
+    left: 27%;
+    margin-left:7%;
+}
+.dd1{
+    position: relative;
+    top: -159px;
+    height: 33px;
+    width: 194px;
+    left: 27%;
+    margin-right:41%;
+}
+.dinnerBox{
+    
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    height: 120px;
+    object-fit: contain;
+    padding: 0px;
+    margin-left:15px;
+    
+}
+.briefExplain{
+    width: 137px;
+    height: 62px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--bluey-grey);
+}
+.Topic{
+    width: 88px;
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark-slate-blue);
+}
+.image{
+    float: left;
+}
+.padding{
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    .padding{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+    .heading4{
+        margin-left: 30px;
+        
+    }
+}
+@media only screen and (min-width: 768px)
+{
+
+    .padding{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+}
+@media (min-width: 415px){
+    div .col-sm-12 {
+        
+        flex: 0 0 100%;
+        max-width: 70%;
+    }
+}
+@media (min-width: 572px){
+div .col-sm-12 {
+    
+    flex: 0 0 100%;
+    max-width: 47%;
+}
+}
+@media (min-width: 786px){
+    div .col-lg-3 {
+        
+        flex: 0 0 100%;
+        max-width: 40%;
+    }
+}
+@media (min-width: 906px){
+    div .col-lg-3 {
+        
+        flex: 0 0 100%;
+        max-width: 30%;
+    }
+}
+@media (min-width: 976px){
+    div .col-lg-3 {
+        
+        flex: 0 0 100%;
+        max-width: 27%;
+    }
+}
