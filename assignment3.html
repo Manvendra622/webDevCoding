@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Docs</title>
+    </head>
+    <body><script>
+        class restorentManager {
+            restorentList = [{
+                id: 1,
+                restorentName: 'KFC',
+                address: 'chauk road',
+                city: 'Mehdawal'
+              },
+              {
+                id: 2,
+                restorentName: 'burger King',
+                address: 'K.N road',
+                city: 'Mehdawal'
+              },
+              {
+                id: 3,
+                restorentName: 'Dominos',
+                address: 'Civil lines',
+                city: 'Gkp'
+              }
+            ]
+            printAllrestorentNames = () => {
+              console.log(this.restorentList.map(restorent => restorent.restorentName));
+            }
+            filterrestorentBycity = (cityName) => {
+              console.log(this.restorentList.filter(item => item.city == cityName));
+            }
+          
+          }
+          const restorentobj = new restorentManager();
+          restorentobj.printAllrestorentNames();
+          restorentobj.filterrestorentBycity('Gkp');
+        </script>
+    </body>
+</html>

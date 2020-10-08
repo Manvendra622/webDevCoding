@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+var avg_ratingData = {};
+var individual_elements = [];
+avg_ratingData.individual_elements = individual_elements;
+
+ratingData = [{restaurant: 'KFC',rating: 5},
+                {restaurant: 'Burger King',rating: 4},
+                {restaurant: 'KFC',rating: 3},
+                {restaurant: 'Domino',rating: 2},
+                {restaurant: 'Subway',rating: 3},
+                {restaurant: 'Domino',rating: 1},
+                {restaurant: 'Subway',rating: 4},
+                {restaurant: 'Pizza Hut',rating: 5}];   
+                
+                
+ for(var i=0;i<ratingData.length;i++)
+ {
+    findAvg(ratingData,ratingData[i]["restaurant"]);
+ }  
+ console.log("1 question");
+ console.log(getUnique(individual_elements,'restaurant'));
+
+ function findAvg(rd,restname)
+ {
+    
+
+    var rd_with_restname_elements = rd.filter(function (rd) {
+       return rd.restaurant === restname;
+    });   
+
+   
+    let rd_with_restname_sum = rd_with_restname_elements.reduce((acc, rd_with_restname_elements) => {
+       return acc + rd_with_restname_elements.rating;
+    }, 0);
+    const averageRating = rd_with_restname_sum / rd_with_restname_elements.length;
+    
+
+    var individual_elements = {
+        "restaurant": restname,
+        "Avg": averageRating
+    }
+    avg_ratingData.individual_elements.push(individual_elements);
+   
+    if(averageRating>=4)
+    {
+       console.log("2 question");
+       console.log(restname);
+    }
+    
+ 
+ }
+
+
+ function getUnique(arr, comp) {
+
+   const unique =  arr.map(e => e[comp])
+
+   .map((e, i, final) => final.indexOf(e) === i && i)
+
+   .filter((e) => arr[e]).map(e => arr[e]);
+
+   return unique;
+}
+
+
+</script>
+
+</body>
+</html>
